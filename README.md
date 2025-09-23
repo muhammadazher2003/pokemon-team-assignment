@@ -77,9 +77,9 @@ Now open http://localhost:3000
 
 Add screenshots here once UI is ready. Example:
 
-/SCREENSHOTS/Contarcts Page.png
-/SCREENSHOTS/Sign Up Page.png
-/SCREENSHOTS/Teams Page.png
+/SCREENSHOTS/ContarctsPage.png
+/SCREENSHOTS/SignUpPage.png
+/SCREENSHOTS/TeamsPage.png
 
 ### 📌 Folder Structure
 ```
