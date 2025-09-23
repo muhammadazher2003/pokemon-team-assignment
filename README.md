@@ -76,10 +76,15 @@ Now open http://localhost:3000
 ### 📸 Screenshots
 
 Add screenshots here once UI is ready. Example:
+### Sign Up Page
+![Sign Up Page](./SCREENSHOTS/SignUpPage.png)
 
-/SCREENSHOTS/ContarctsPage.png
-/SCREENSHOTS/SignUpPage.png
-/SCREENSHOTS/TeamsPage.png
+### Teams Page
+![Teams Page](./SCREENSHOTS/TeamsPage.png)
+
+### Contracts Page
+![Contracts Page](./SCREENSHOTS/ContractsPage.png)
+
 
 ### 📌 Folder Structure
 ```
