@@ -147,8 +147,8 @@ body {
 
 /* Card Header */
 .custom-dark-card .ant-card-head {
-  background-color: #111827 !important; /* gray-900 */
-  border-bottom: 1px solid #374151 !important;
+  background-color: #1f2937 !important; /* gray-900 */
+  border-bottom: 3px solid #374151 !important;
   padding: 1rem !important;
 }
 
@@ -160,7 +160,9 @@ body {
 
 /* Card Body */
 .custom-dark-card .ant-card-body {
-  padding: 1.5rem !important;
+  padding: 0px !important;
+  padding-top: 1rem !important;
+  padding-bottom: 0.5rem !important;
   background-color: #1f2937 !important; /* gray-800 */
   color: #d1d5db !important; /* gray-300 */
 }
@@ -243,5 +245,81 @@ body {
   color: #ffffff !important;
 }
 .dark-modal .anticon-close {
+  color: #ffffff !important;
+}
+
+
+.custom-dark-pagination .ant-pagination-item {
+  background-color: #1f2937 !important; /* gray-800 */
+  border: 1px solid #374151 !important; /* gray-700 */
+}
+
+.custom-dark-pagination .ant-pagination-item a {
+  color: #d1d5db !important; /* gray-300 */
+}
+
+.custom-dark-pagination .ant-pagination-item-active {
+  background-color: #4f46e5 !important; /* indigo-600 */
+  border-color: #4f46e5 !important;
+}
+
+.custom-dark-pagination .ant-pagination-prev button,
+.custom-dark-pagination .ant-pagination-next button {
+  background-color: #1f2937 !important;
+  color: #d1d5db !important;
+  border: 1px solid #374151 !important;
+}
+
+
+/* ✅ Fix for page size dropdown */
+.custom-dark-pagination .ant-pagination-options {
+  color: #d1d5db !important;
+}
+
+.custom-dark-pagination .ant-pagination-options .ant-select-selector {
+  background-color: #1f2937 !important; /* dark background */
+  border: 1px solid #374151 !important;
+  color: #d1d5db !important;
+}
+
+.custom-dark-pagination .ant-pagination-options .ant-select-arrow {
+  color: #d1d5db !important;
+}
+
+/* ✅ Fix for total results text */
+.custom-dark-pagination .ant-pagination-total-text {
+  color: #9ca3af !important; /* gray-400 */
+}
+
+
+/* ✅ Page size selector itself */
+.custom-dark-pagination .ant-select-selector {
+  background-color: #1f2937 !important; /* dark background */
+  border: 1px solid #374151 !important;
+  color: #d1d5db !important;
+}
+
+.custom-dark-pagination .ant-select-arrow {
+  color: #d1d5db !important;
+}
+
+/* ✅ Dropdown menu for page size options */
+.ant-select-dropdown {
+  background-color: #1f2937 !important; /* dark */
+  border: 1px solid #374151 !important;
+}
+
+.ant-select-dropdown .ant-select-item {
+  background-color: #1f2937 !important;
+  color: #d1d5db !important;
+}
+
+.ant-select-dropdown .ant-select-item-option-active {
+  background-color: #374151 !important; /* darker hover */
+  color: #ffffff !important;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected {
+  background-color: #4f46e5 !important; /* highlight selected */
   color: #ffffff !important;
 }
