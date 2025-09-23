@@ -1,91 +1,107 @@
-# 🧩 Pokémon Team Assignment
+# Pokémon Team Assignment
 
-A web-based application built with **Next.js** that allows users to assign Pokémon to teams — potentially for battles, planning, or organizational purposes. The app is bootstrapped using [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and utilizes modern web development practices like TypeScript, TailwindCSS, and app routing.
+A full-stack web application that allows users to **search, view, and manage Pokémon teams**.  
+Built with **Next.js (frontend)**, **Express.js (backend)**, **MongoDB (database)**, and **JWT-based authentication**.
 
 ---
 
 ## 🚀 Features
 
-- Build balanced Pokémon teams
-- Modular and extendable architecture
-- Fast, modern frontend using Next.js App Router
-- Simple, clean UI using CSS modules or Tailwind
-- Built-in development tooling and configs
+- 🔍 Search Pokémon by name (exact and partial matches)
+- 📑 Pagination support for large search results
+- 📊 Pokémon details with image, types, and base experience
+- 🧑‍🤝‍🧑 User authentication (Sign up, Login)
+- 🛡️ JWT-based authentication for secure API requests
+- 📂 Team management (add/remove Pokémon from your team)
+- 🎨 Dark mode UI with TailwindCSS + Ant Design components
 
 ---
 
-## 📦 Tech Stack
+## 🛠️ Tech Stack
 
-- **Next.js** (App Router)
-- **TypeScript**
-- **TailwindCSS**
-- **ESLint + Prettier**
-- **Bun / npm / pnpm** support
+- **Frontend:** Next.js, React, TailwindCSS, Ant Design  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB (Mongoose ODM)  
+- **Authentication:** JWT (JSON Web Token)  
 
 ---
 
-## 🔧 Getting Started
+## ⚙️ Installation & Setup
 
-Install dependencies and start the dev server:
-
+### 1️⃣ Clone Repository
 ```bash
-# Install dependencies
-npm install
+git clone https://github.com/your-username/pokemon-team-assignment.git
+cd pokemon-team-assignment
+```
 
-# Run the dev server
+### 2️⃣ Install Dependencies
+
+For both frontend and backend:
+```bash
+npm install
+```
+
+### 3️⃣ Setup Environment Variables
+
+Create a .env.local file in the root directory and add:
+```bash
+MONGO_URI=your-mongodb-connection-uri
+JWT_SECRET=your-secret-key
+PORT=5000
+```
+
+MONGO_URI: Your MongoDB Atlas/local connection string
+
+JWT_SECRET: A random secret string for JWT signing
+
+PORT: Port for your Express backend (default: 5000)
+
+### 4️⃣ Run the Development Servers
+Backend (Express API)
+```bash
+cd backend
 npm run dev
 ```
 
-Then open your browser and visit:
-
-```
-http://localhost:3000
-```
-
-The app will auto-reload as you make changes.
-
----
-
-## 📁 Project Structure
-
-```
-pokemon-assignment1/
-├── app/
-│   ├── page.tsx          # Main page
-│   ├── layout.tsx        # Layout template
-├── public/               # Static assets
-├── styles/               # Global styles
-├── components/           # Reusable components (if added)
-├── package.json
-├── next.config.ts
-└── tsconfig.json
+Frontend (Next.js)
+```bash
+cd frontend
+npm run dev
 ```
 
----
 
-## 🧪 Scripts
+Now open http://localhost:3000
+ 🚀
 
-- `npm run dev` – Start development server
-- `npm run build` – Build for production
-- `npm run lint` – Run linter
+### 📸 Screenshots
 
----
+Add screenshots here once UI is ready. Example:
 
-## 📌 Todo (Suggestions)
+/SCREENSHOTS/Contarcts Page.png
+/SCREENSHOTS/Sign Up Page.png
+/SCREENSHOTS/Teams Page.png
 
-- Add logic to assign Pokémon dynamically (based on type, power, etc.)
-- Fetch data from PokéAPI
-- Add drag-and-drop team builder
-- Export teams as JSON/CSV
+### 📌 Folder Structure
+```
+pokemon-team-assignment/
+│── backend/        # Express.js backend
+│   ├── models/     # Mongoose models
+│   ├── routes/     # Express routes
+│   └── server.js   # Entry point
+│
+│── frontend/       # Next.js frontend
+│   ├── app/        # Pages & components
+│   └── styles/     # TailwindCSS styles
+│
+│── .env.local      # Environment variables
+│── package.json
+│── README.md
+```
 
----
+### 🤝 Contributing
 
-## 🧑‍💻 Author
+Pull requests are welcome! For major changes, open an issue first to discuss what you’d like to change.
 
-Built by [Muhammad Azher](https://github.com/muhammadazher2003)
+### 📜 License
 
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License.
