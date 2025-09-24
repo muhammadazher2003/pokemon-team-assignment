@@ -47,25 +47,17 @@ Create a .env.local file in the root directory and add:
 ```bash
 MONGO_URI=your-mongodb-connection-uri
 JWT_SECRET=your-secret-key
-PORT=5000
+PORT=3000
 ```
 
 MONGO_URI: Your MongoDB Atlas/local connection string
-
 JWT_SECRET: A random secret string for JWT signing
-
-PORT: Port for your Express backend (default: 5000)
+PORT: Port for your Express backend
 
 ### 4️⃣ Run the Development Servers
-Backend (Express API)
-```bash
-cd backend
-npm run dev
-```
 
-Frontend (Next.js)
 ```bash
-cd frontend
+cd pokemon_assignment1
 npm run dev
 ```
 
@@ -89,18 +81,29 @@ Add screenshots here once UI is ready. Example:
 ### 📌 Folder Structure
 ```
 pokemon-team-assignment/
-│── backend/        # Express.js backend
-│   ├── models/     # Mongoose models
-│   ├── routes/     # Express routes
-│   └── server.js   # Entry point
-│
-│── frontend/       # Next.js frontend
-│   ├── app/        # Pages & components
-│   └── styles/     # TailwindCSS styles
-│
-│── .env.local      # Environment variables
-│── package.json
-│── README.md
+├── pokemon-assignment1/
+│ ├── app/
+│ │ ├── api/
+│ │ ├── auth/
+│ │ ├── contracts/
+│ │ ├── teams/
+│ │ ├── globals.css
+│ │ ├── layout.tsx
+│ │ └── page.tsx
+│ ├── lib/
+│ ├── middleware/
+│ ├── models/
+│ ├── utils/
+│ ├── .gitignore
+│ ├── README.md
+│ ├── eslint.config.mjs
+│ ├── next.config.ts
+│ ├── package-lock.json
+│ ├── package.json
+│ ├── postcss.config.mjs
+│ └── tsconfig.json
+├── SCREENSHOTS/
+└── README.md
 ```
 
 ### 🤝 Contributing
